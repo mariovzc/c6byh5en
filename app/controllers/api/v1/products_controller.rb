@@ -11,4 +11,8 @@ class Api::V1::ProductsController < ApplicationController
       render json: @product.errors, status: 422
     end
   end
+  def update
+  end
+  def destroy
+  end
 end
