@@ -19,6 +19,8 @@ class Api::V1::ProductsController < ApplicationController
     end
   end
   def destroy
+    @product.destroy
+    head :no_content, status: 422    
   end
   private
   def set_product
